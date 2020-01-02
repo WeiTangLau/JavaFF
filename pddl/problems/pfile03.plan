@@ -1,0 +1,23 @@
+;;!domain: driverlog
+;;!problem: DLOG-2-2-4
+
+0.00100: (walk driver2 s0 p2-0)
+0.00200: (walk driver2 p2-0 s2)
+0.00300: (board-truck driver2 truck2 s2)
+0.00400: (drive-truck truck2 s2 s1 driver2)
+0.00500: (board-truck driver1 truck1 s1)
+0.00600: (drive-truck truck1 s1 s0 driver1)
+0.00700: (load-truck package3 truck2 s1)
+0.00800: (load-truck package1 truck1 s0)
+0.00900: (drive-truck truck2 s1 s2 driver2)
+0.01000: (disembark-truck driver2 truck2 s2)
+0.01100: (unload-truck package3 truck2 s2)
+0.01200: (drive-truck truck1 s0 s1 driver1)
+0.01300: (unload-truck package1 truck1 s1)
+0.01400: (drive-truck truck1 s1 s0 driver1)
+0.01500: (load-truck package2 truck1 s0)
+0.01600: (drive-truck truck1 s0 s1 driver1)
+0.01700: (unload-truck package2 truck1 s1)
+
+; Makespan: 0.017
+; Cost: 0.017
